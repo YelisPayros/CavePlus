@@ -22,15 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -44,7 +40,7 @@
               "RelativeDocumentMoniker": "DB\\Contexts\\AppDBContext.cs",
               "ToolTip": "C:\\Users\\nicol\\Downloads\\CavePlus\\CavePlus\\DB\\Contexts\\AppDBContext.cs",
               "RelativeToolTip": "DB\\Contexts\\AppDBContext.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAowJQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAADwv5QAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T10:36:41.497Z",
               "EditorCaption": ""
@@ -59,8 +55,7 @@
               "RelativeToolTip": "CavePlus\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-04T15:58:11.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T15:58:11.593Z"
             },
             {
               "$type": "Document",
