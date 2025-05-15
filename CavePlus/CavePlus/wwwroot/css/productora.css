@@ -1,0 +1,150 @@
+﻿body {
+}
+
+.incioproductora{
+    color: #ffffff;
+    font-size:16px;
+}
+
+.incioproductora .title{
+    margin-top:30px;
+    margin-bottom:35px;
+}
+
+
+.incioproductora .table{
+    color:#ffffff;
+   
+    width:100%;
+    text-align:center;
+    font-size:16px;
+    margin-top:40px;
+    margin-bottom:50px;
+    border-spacing: 10px; 
+    background-color: rgb(32, 105, 185, 0.20); 
+}
+
+.incioproductora th {
+    background-color: rgb(32, 105, 185, 0.50); 
+    color: white;
+    padding: 10px; 
+
+}
+
+
+.inicioproductora td {
+    color: white; 
+    padding: 20px; 
+}
+
+
+.incioproductora .btn-primary {
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+ table .btn-edit {
+    background-color: #175c97;
+    margin-right:12px;
+    color: #ffffff;
+    border-color: #175c96;
+}
+
+table .btn-edit:hover {
+    background-color: #0a4576;
+}
+/*AgregarProductora*/
+
+.addproductora {
+    color: #ffffff;
+}
+
+.addproductora .title{
+    margin-top:40px;
+    margin-bottom:25px;
+}
+
+.addproductora .card{
+    background-color:transparent;
+}
+
+ .addproductora .card-body{
+     font-size: 18px;
+
+ }
+
+ .addproductora .btns{
+   margin-top:40px;
+   
+ }
+
+
+.addproductora .form-control {
+    margin-top:10px;
+    width:500px;
+ }
+
+.addproductora .btn-secondary{
+       background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-right:30px;
+
+}
+
+/*EditarProductora*/
+.editproductora {
+    color: #ffffff;
+}
+    
+
+.editproductora .title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+
+
+.editproductora .form-group {
+    font-size: 18px;
+    margin-bottom:40px;
+}
+
+
+.editproductora .form-control {
+    margin-top:10px;
+    width: 500px;
+}
+
+
+.editproductora .btn-secondary {
+    background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+/*BorrarProductora*/
+.delproductora {
+    color: #ffffff;
+    font-size:16px;
+}
+
+.delproductora .alert-warning {
+    margin-top: 20px;
+}
+
+.delproductora .title {
+    margin-top:40px;
+    margin-bottom:25px;
+}
+
+.delproductora .btn-danger{
+    margin-top:30px;
+}
+
+.delproductora .btn-secondary{
+    margin-top:30px;
+     background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left: 30px;
+}
+

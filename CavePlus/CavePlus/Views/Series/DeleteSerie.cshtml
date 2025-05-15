@@ -1,0 +1,22 @@
+﻿@model DB.Entities.Series
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/series.css" asp-append-version="true" />
+}
+
+<div class="delserie">
+
+    <h2 class="title">Eliminar Serie</h2>
+    <div class="alert alert-warning">
+        <strong>Advertencia:</strong> ¿Estás seguro de que deseas eliminar la serie "@Model.Nombre"? Esta acción no se puede deshacer.
+    </div>
+
+    <div class="btns">
+    <form asp-action="DeleteConf" method="post">
+        <input type="hidden" name="id" value="@Model.Id" />
+        <button type="submit" class="btn btn-danger">Aceptar</button>
+        <a href="@Url.Action("ControlSeries", "Series")" class="btn btn-secondary">Cancelar</a>
+    </form>
+    </div>
+
+ </div>

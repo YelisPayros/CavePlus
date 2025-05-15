@@ -1,0 +1,19 @@
+﻿@model CavePlus.Models.ProductoraViewModel 
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/productora.css" asp-append-version="true" />
+}
+
+<div class="delproductora">
+<h2 class="title">Eliminar Productora</h2>
+
+    <div class="alert alert-warning">
+        <strong>Advertencia:</strong> ¿Estás seguro de que deseas eliminar la productora "@Model.Nombre"? Esta acción no se puede deshacer.
+    </div>
+
+<form asp-action="DeleteProductora" method="post">
+    <input type="hidden" asp-for="ProductoraId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="ControlProductora" class="btn btn-secondary">Cancelar</a>
+</form>
+</div>

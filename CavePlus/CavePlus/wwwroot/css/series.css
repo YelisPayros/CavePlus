@@ -1,0 +1,159 @@
+﻿body {
+}
+
+/*InicioSerie*/
+
+.inicioserie{
+color: #ffffff;
+margin-top:30px;
+font-size:16px;
+text-align:left;
+}
+
+.inicioserie .titulo {
+    margin-bottom: 40px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.inicioserie table {
+    width: 100%; 
+    margin-top: 20px; 
+    color:#ffffff;
+    border-spacing: 10px; 
+    background-color: rgb(32, 105, 185, 0.20); 
+    text-align:center;
+    
+}
+
+.inicioserie th {
+   background-color: rgb(32, 105, 185, 0.50); 
+   padding: 15px; 
+ }
+
+.inicioserie td {
+ padding: 15px;
+}
+
+.inicioserie .btn-add {
+    margin-bottom:30px;
+    font-size:1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inicioserie .btn-edit {
+     background-color: #175c96; 
+     color:#ffffff;
+     margin-right:9px;
+     border-color: #175c96;
+ }
+
+.btn-edit:hover {
+    background-color: #0a4576;
+}
+
+
+.inicioserie .btn {
+    margin-top: 10px; 
+}
+
+
+/*AddSerie*/
+
+.addserie .title {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px; 
+    text-align:left;
+    font-size: 28px;
+}
+
+.addserie .form-group {
+    margin-bottom: 20px; 
+    display: block; 
+    color:#ffffff;
+}
+
+.addserie .btns {
+    
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom:40px;
+    display:flex;
+}
+
+addserie .btn-primary {
+    font-size: 17px;
+}
+
+.addserie .btn-secondary {
+    background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left:30px;
+}
+
+/*Editar Serie*/
+
+.editserie .title {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+    font-size: 28px;
+}
+
+.editserie .form-group {
+    margin-bottom: 20px;
+    display: block;
+    color: #ffffff;
+}
+
+.editserie .btns {
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.editserie .btn-primary {
+    font-size: 17px;
+}
+
+.editserie .btn-secondary {
+    background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+
+/*Borrarserie*/
+
+.delserie {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.delserie .title{
+    margin-bottom: 30px;
+}
+
+.delserie .alert-warning {
+    margin-top: 20px;
+}
+
+.delserie .btns{
+    margin-top:35px;
+    justify-content: space-between;
+
+}
+
+
+.delserie .btn-secondary {
+    background-color: rgb(52, 86, 121, 0.80);
+    margin-left: 30px;
+}
+

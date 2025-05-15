@@ -1,0 +1,26 @@
+﻿@model ProductoraViewModel
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/productora.css" asp-append-version="true" />
+}
+
+<div class="editproductora">
+<h2 class="title">Editar Productora</h2>
+
+<form asp-action="EditConf" method="post">
+    <input type="hidden" asp-for="ProductoraId" />
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="ControlProductora" class="btn btn-secondary">Cancelar</a>
+</form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

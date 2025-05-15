@@ -1,0 +1,34 @@
+﻿@model HomeViewModel
+
+<div class="container">
+    <h2 class="title-results">Resultados de búsqueda</h2>
+
+    <!-- Listado de series -->
+    <div class="row">
+        @if (Model.Series.Any())
+        {
+            @foreach (var serie in Model.Series)
+            {
+                <div class="col-md-3">
+                    <div class="card seriesInicio">
+                        <img src="@serie.Portada" class="card-img-top" alt="@serie.Nombre" />
+                        <div class="card-body">
+                            <h5 class="card-title">@serie.Nombre</h5>
+                            <p class="card-text">
+                                Géneros:
+                                @(serie.GeneroPrimario != null ? serie.GeneroPrimario.Nombre : "No definido"),
+                                @(serie.GeneroSecundario != null ? serie.GeneroSecundario.Nombre : "No definido")
+                            </p>
+                            <p class="card-text">Productora: @(serie.Productora != null ? serie.Productora.Nombre : "Sin productora")</p>
+                            <a asp-action="Details" asp-controller="Home" asp-route-id="@serie.Id" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No se encontraron resultados.</p>
+        }
+    </div>
+</div>

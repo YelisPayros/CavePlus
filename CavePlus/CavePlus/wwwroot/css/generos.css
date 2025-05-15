@@ -1,0 +1,143 @@
+﻿.iniciogenero{
+    color: #ffffff;
+    font-size:16px;
+}
+
+.iniciogenero .title{
+    margin-top:30px;
+    margin-bottom:35px;
+}
+
+
+.iniciogenero .table{
+    color:#ffffff;
+   
+    width:100%;
+    text-align:center;
+    font-size:16px;
+    margin-top:40px;
+    margin-bottom:50px;
+    border-spacing: 10px; 
+    background-color: rgb(32, 105, 185, 0.20); 
+}
+
+.iniciogenero th {
+    background-color: rgb(32, 105, 185, 0.50); 
+    color: white;
+    padding: 10px; 
+
+}
+
+
+.iniciogenero td {
+    color: white; 
+    padding: 20px; 
+}
+
+
+.iniciogenero .btn-primary {
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+ table .btn-edit {
+    background-color: #175c97;
+    margin-right:12px;
+    color: #ffffff;
+    border-color: #175c96;
+}
+
+table .btn-edit:hover {
+    background-color: #0a4576;
+}
+
+/*AgregarGenero*/
+
+.addgenero{
+    color: #ffffff;
+}
+    
+
+.addgenero .title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+
+
+.addgenero .form-group {
+    font-size: 18px;
+    margin-bottom:40px;
+}
+
+
+.addgenero .form-control {
+    margin-top:10px;
+    width: 500px;
+}
+
+
+.addgenero .btn-secondary {
+    background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+/*Editargenero*/
+
+.editgenero{
+    color: #ffffff;
+}
+    
+
+.editgenero .title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+
+
+.editgenero .form-group {
+    font-size: 18px;
+    margin-bottom:40px;
+}
+
+
+.editgenero .form-control {
+    margin-top:10px;
+    width: 500px;
+}
+
+
+.editgenero .btn-secondary {
+    background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+/*BorrarGenero*/
+
+.delgenero {
+    color: #ffffff;
+    font-size:16px;
+}
+
+.delgenero .alert-warning{
+    margin-top:20px;
+}
+
+.delgenero .title {
+    margin-top:40px;
+    margin-bottom:25px;
+}
+
+.delgenero .btn-danger{
+    margin-top:30px;
+}
+
+.delgenero .btn-secondary{
+    margin-top:30px;
+     background-color: rgb(52, 86, 121, 0.80);
+    font-size: 16px;
+    margin-left: 30px;
+}

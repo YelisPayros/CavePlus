@@ -1,0 +1,32 @@
+﻿@model List<DB.Entities.Genero>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/generos.css" asp-append-version=" true" />
+}
+
+<div class="iniciogenero">
+<h2 class="title">Mantenimiento de Géneros</h2>
+
+<a href="@Url.Action("AddGenero", "Generos")" class="btn btn-primary">Crear Género</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var genero in Model)
+        {
+            <tr>
+                <td>@genero.Nombre</td>
+                <td>
+                    <a href="@Url.Action("EditGenero", "Generos", new { id = genero.GeneroId })" class="btn btn-edit">Editar</a>
+                    <a href="@Url.Action("DeleteGenero", "Generos", new { id = genero.GeneroId })" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

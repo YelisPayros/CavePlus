@@ -1,0 +1,105 @@
+﻿body {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgb(17, 71, 155, 0.50)), url('/Imagenes/willst.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+}
+
+.details-container {
+    margin:90px;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.details-info {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    flex: 1;
+    margin-bottom: 40px;
+    background-color: rgba(8, 55, 106, 0.8);
+    padding: 25px;
+    border-radius: 30px;
+    border: 5px solid #4fc3f7;
+}
+
+.img-fluid {
+    width: 200px;
+    height: 300px;
+    margin-left:100px;
+}
+
+
+.video-title {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 820px;
+    height: 415px;
+    margin-top: 20px;
+    margin-left: 200px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.play-button {
+    font-size: 60px; /* Tamaño del ícono de reproducción */
+    color: #ffffff; /* Color del ícono de reproducción */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.play-button:hover {
+    opacity: 1; /* Hacer el ícono más visible al hacer hover */
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 415px;
+    display: none; /* El iframe está oculto hasta que se haga clic en el botón de reproducción */
+}
+
+.video-container {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.back-button {
+    margin-top:40px;
+    margin-left: 200px;
+
+}
+
+
+    .back-button .btn {
+        background-color: #4fc3f7;
+        color: rgba(0,0,0,0.5);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:1rem;
+        font-weight:bold;
+    }
+

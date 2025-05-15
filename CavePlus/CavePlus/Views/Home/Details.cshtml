@@ -1,0 +1,58 @@
+﻿@model CavePlus.Models.DetailsViewModel
+
+@{
+    Layout = "_newLayout"; // Define el layout a usar
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Player.css" asp-append-version="true" />
+}
+
+<div class="details-container">
+    <img src="@Model.Portada" alt="@Model.Nombre" class="img-fluid" />
+
+    <div class="details-info">
+        <h2>@Model.Nombre</h2>
+        <p><strong>Productora:</strong> @(string.IsNullOrEmpty(Model.Productora) ? "No disponible" : Model.Productora)</p>
+        <p>
+            <strong>Género Primario:</strong>
+            @(string.IsNullOrEmpty(Model.GeneroPrimario) ? "No definido" : Model.GeneroPrimario)
+        </p>
+
+        @if (!string.IsNullOrEmpty(Model.GeneroSecundario))
+        {
+            <p><strong>Género Secundario:</strong> @Model.GeneroSecundario</p>
+        }
+        else
+        {
+            <p><strong>Género Secundario:</strong> No definido</p>
+        }
+    </div>
+</div>
+
+<div class="video-title"><h3>Reproductor</h3></div>
+
+@if (!string.IsNullOrEmpty(Model.LinkYT))
+{
+    <div class="video-wrapper">
+        <div class="overlay">
+            <i class="bi bi-play-fill play-button"></i>
+        </div>
+        <div class="video-container">
+            <iframe width="820" height="415" src="@Model.LinkYT" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:none"></iframe>
+        </div>
+    </div>
+}
+
+<div class="back-button">
+    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Volver a la lista</a>
+</div>
+
+<script>
+    document.querySelector('.overlay').addEventListener('click', function () {
+        this.style.display = 'none'; // Oculta la capa de superposición
+        document.querySelector('.video-container iframe').style.display = 'block'; // Muestra el iframe del video
+    });
+</script>

@@ -1,0 +1,28 @@
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\bin\Debug\net8.0\DB.deps.json
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\bin\Debug\net8.0\DB.runtimeconfig.json
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\bin\Debug\net8.0\DB.dll
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\bin\Debug\net8.0\DB.pdb
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.csproj.AssemblyReference.cache
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.AssemblyInfoInputs.cache
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.AssemblyInfo.cs
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.csproj.CoreCompileInputs.cache
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.dll
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\refint\DB.dll
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.pdb
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\DB.genruntimeconfig.cache
+C:\Users\Yelis Nicole\source\repos\CavePlus\DB\obj\Debug\net8.0\ref\DB.dll
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\bin\Debug\net8.0\DB.deps.json
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\bin\Debug\net8.0\DB.runtimeconfig.json
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\bin\Debug\net8.0\DB.dll
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\bin\Debug\net8.0\DB.pdb
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.csproj.AssemblyReference.cache
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.AssemblyInfoInputs.cache
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.AssemblyInfo.cs
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.csproj.CoreCompileInputs.cache
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.dll
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\refint\DB.dll
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.pdb
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\DB.genruntimeconfig.cache
+C:\Users\nicol\Downloads\CavePlus\CavePlus\DB\obj\Debug\net8.0\ref\DB.dll

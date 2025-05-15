@@ -1,0 +1,33 @@
+﻿@model CavePlus.Models.ProductoraListViewModel
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/productora.css" asp-append-version="true" />
+}
+
+<div class="incioproductora">
+
+<h2 class="title">Mantenimiento de Productoras</h2>
+
+<a href="@Url.Action("AddProductora")" class="btn btn-primary">Nueva productora</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var productora in Model.Productoras)
+        {
+            <tr>
+                <td>@productora.Nombre</td>
+                <td>
+                    <a href="@Url.Action("EditProductora", new { id = productora.ProductoraId })" class="btn btn-edit">Editar</a>
+                    <a href="@Url.Action("DeleteProductora", new { id = productora.ProductoraId })" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

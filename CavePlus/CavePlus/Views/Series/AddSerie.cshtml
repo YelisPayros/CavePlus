@@ -1,0 +1,65 @@
+﻿@model CavePlus.Models.BaseSerieViewModel
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/series.css" asp-append-version="true" />
+}
+
+<div class="addserie">
+
+    <h2 class="title">Añadir Nueva Serie</h2>
+
+    <form asp-action="AddSerie" method="post">
+        <div class="form-group">
+            <label for="Nombre">Nombre de la Serie</label>
+            <input asp-for="Nombre" class="form-control" placeholder="Nombre de la serie" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Portada">Portada</label>
+            <input asp-for="Portada" class="form-control" placeholder="Ingrese la URL de la imagen" />
+            <span asp-validation-for="Portada" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="LinkYT">Enlace de YouTube</label>
+            <input asp-for="LinkYT" class="form-control" placeholder="Enlace de YouTube" />
+            <span asp-validation-for="LinkYT" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="ProductoraId">Productora</label>
+            <select asp-for="ProductoraId" class="form-control" asp-items="@(new SelectList(Model.Productoras, "ProductoraId", "Nombre"))">
+                <option value="">Selecciona una productora</option>
+            </select>
+            <span asp-validation-for="ProductoraId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="GeneroPrimarioId">Genero Primario</label>
+            <select asp-for="GeneroPrimarioId" class="form-control" asp-items="@(new SelectList(Model.Generos, "GeneroId", "Nombre"))">
+                <option value="">Selecciona un género primario</option>
+            </select>
+            <span asp-validation-for="GeneroPrimarioId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="GeneroSecundarioId">Genero Secundario (opcional)</label>
+            <select asp-for="GeneroSecundarioId" class="form-control" asp-items="@(new SelectList(Model.Generos, "GeneroId", "Nombre"))">
+                <option value="">Selecciona un género secundario (opcional)</option>
+            </select>
+            <span asp-validation-for="GeneroSecundarioId" class="text-danger"></span>
+        </div>
+
+        <div class="btns">
+            <button type="submit" class="btn btn-primary">Añadir Serie</button>
+            <a asp-action="ControlSeries" class="btn btn-secondary">Volver</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

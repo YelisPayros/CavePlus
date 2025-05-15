@@ -1,0 +1,56 @@
+﻿@model CavePlus.Models.HomeViewModel
+
+@{
+    ViewBag.Title = "Control de Series";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/series.css" asp-append-version="true" />
+}
+
+
+<div class="inicioserie">
+    <h2 class="titulo">Mantenimiento de Series</h2>
+
+    <a href="@Url.Action("AddSerie", "Series")" class="btn btn-primary btn-add"> Nueva Serie</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Imagen de Portada</th>
+                <th>Género Primario</th>
+                <th>Género Secundario</th>
+                <th>Productora</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @if (Model.Series != null && Model.Series.Any())
+            {
+                foreach (var serie in Model.Series)
+                {
+                    <tr>
+                        <td>@serie.Nombre</td>
+                        <td>
+                            <img src="@serie.Portada" alt="@serie.Nombre" style="width: 100px; height: 150px;" />
+                        </td>
+                        <td>@(serie.GeneroPrimario != null ? serie.GeneroPrimario.Nombre : "No asignado")</td>
+                        <td>@(serie.GeneroSecundario != null ? serie.GeneroSecundario.Nombre : "No asignado")</td>
+                        <td>@(serie.Productora != null ? serie.Productora.Nombre : "No asignada")</td>
+                        <td>
+                            <a asp-action="EditSerie" asp-route-id="@serie.Id" class="btn btn-warning btn-edit">Editar</a>
+                            <a asp-action="DeleteSerie" asp-route-id="@serie.Id" class="btn btn-danger btn-del">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center">No hay series disponibles.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

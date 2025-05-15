@@ -1,0 +1,19 @@
+﻿@model DB.Entities.Genero
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/generos.css" asp-append-version=" true" />
+}
+
+<div class="delgenero">
+<h2 class="tite">Eliminar Genero</h2>
+
+<div class="alert alert-warning">
+    <strong>Advertencia:</strong> ¿Estás seguro de que deseas eliminar el genero "@Model.Nombre"? Esta acción no se puede deshacer.
+</div>
+
+<form asp-action="DeleteGenero" method="post">
+    <input type="hidden" asp-for="GeneroId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a href="@Url.Action("ControlGeneros", "Generos")" class="btn btn-secondary">Cancelar</a>
+</form>
+</div>

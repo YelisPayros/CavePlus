@@ -1,0 +1,116 @@
+﻿{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('/Imagenes/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height: 100vh; 
+    position: relative; 
+     
+}
+
+
+.welcome-container {
+    display: flex;
+    align-items: flex-start; 
+    margin: 60px 0;
+    margin-bottom:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+    color: aliceblue;
+    justify-content: space-between;
+}
+
+.welcome-message {
+    text-align: left;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+
+.welcome-image {
+    width: 250px;
+    height: auto;
+    margin:10px 50px;
+    
+
+}
+
+.trailer {
+    display: block;
+    text-align: left;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.series-titulo {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seriesInicio {
+    width: 210px;
+    height: 495px;
+    margin: 25px 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.seriesInicio .card-body{
+    width:200px;
+    height:200px;
+    padding:20px;
+    border-radius: 10px;
+    background-color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+
+}
+
+.seriesInicio .card-title{
+   font-size: 1.2rem;
+   font-weight: bold;
+   height: 30px;
+   overflow: hidden; /* Ocultar texto que se salga del área */
+   white-space: nowrap; 
+   text-overflow: ellipsis; 
+}
+
+.seriesInicio .card-text{
+   font-size: 1rem; 
+    line-height: 1.4;
+    height: 25px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) si el texto es demasiado largo */
+
+}
+
+.seriesInicio .card-img-top{
+    
+   width:200px;
+   height:290px;
+   border-radius:10px;
+   display: block; 
+   margin: 0 auto;
+}
+
+.seriesInicio .btn{
+     padding: 5px 10px; 
+     font-size: 0.9rem; 
+     width: 100%; 
+     border-radius: 5px;
+ 
+}
+
+.title-results {
+    margin:40px 0px 40px 0px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

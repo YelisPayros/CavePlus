@@ -1,0 +1,58 @@
+﻿@model HomeViewModel
+
+@{
+    Layout = "_Layout"; // Define el layout a usar
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" /> 
+}
+
+ <div class="welcome-container">
+     <div class="welcome-mesagge">
+        <h2>Stranger Things 4</h2>
+        <p>
+            Descubre tus series favoritas aquí en CavePlus. Pronto tendremos<br>disponible la temporarada 4
+            de la famosa serie Stranger Things.
+        </p>
+        <a href="https://youtu.be/sBEvEcpnG7k?si=l4yvmYTHvp-GTh0O" class="btn btn-primary trailer" target="_blank">Ver Tráiler</a>
+        </div>
+    <img src="/Imagenes/strangerthings4.jpg" alt="Stranger Things" class="welcome-image">
+    </div>
+
+
+    
+    <!-- Listado de series -->
+    
+    <h3 class="series-titulo">Series</h3>
+    <div class="row">
+        @if (Model.Series.Any())
+        {
+            foreach (var serie in Model.Series)
+            {
+                <div class="col-md-3">
+                    <div class="card seriesInicio">
+                        <img src="@serie.Portada" class="card-img-top" alt="@serie.Nombre" />
+                        <div class="card-body">
+                            <h5 class="card-title">@serie.Nombre</h5>
+                            <p class="card-text">
+                                Géneros:
+                                @(serie.GeneroPrimario != null ? serie.GeneroPrimario.Nombre : "No definido"),
+                                @(serie.GeneroSecundario != null ? serie.GeneroSecundario.Nombre : "No definido")
+                            </p>
+                            <p class="card-text">Productora: @(serie.Productora != null ? serie.Productora.Nombre : "Sin productora")</p>
+                            <div cart-footer>
+                            <a asp-action="Details" asp-controller="Home" asp-route-id="@serie.Id" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        
+    </div>
+
+
+
+
+  
